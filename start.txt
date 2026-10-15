@@ -1,0 +1,10 @@
+sudo docker run -d \
+  --name cowrie-prod \
+  --restart unless-stopped \
+  -p 22:2222 \
+  -p 9526:9526 \
+  -v $(pwd)/cowrie.cfg:/cowrie/cowrie-git/etc/cowrie.cfg:ro \
+  -v $(pwd)/userdb.txt:/cowrie/cowrie-git/etc/userdb.txt:ro \
+  -v $(pwd)/log:/cowrie/cowrie-git/var/log/cowrie \
+  -v $(pwd)/downloads:/cowrie/cowrie-git/var/lib/cowrie/downloads \
+  cowrie/cowrie
