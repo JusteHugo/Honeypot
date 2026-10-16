@@ -165,3 +165,7 @@ graph TD
 Changer le port de SSH (dans etc/ssh/ssh_config), prendre un port après 4951
 Redémarrer le service SSH pour appliquer les changements
 ## Deuxième étape
+//
+Tu as fait : changer le nom du "serveur" cowrie en un nom crédible, sauverger les logs
+Quand j'aurais plus de RAM, lié le SIEM (Wazuh) en docker "single-node" ainsi que le monitor de perfs Prometheus. Virus Total est également à faire (ta clé API est compliqué à cacher)
+Egalement il te manque le fichier pickle, (grafana mais ça va de pair avec Prometheus) et création de GIF des commandes rentrées par un attaquant. 
